@@ -6,21 +6,43 @@ A Claude Code skill for creating a personalized virtual companion with real emot
 
 ## Features
 
-- 🎭 **Customizable persona** — Define appearance, voice, personality, emotional patterns
-- 💬 **Natural conversations** — Context-aware emotional responses
-- 🧠 **Emotional state system** — Mood, intimacy, energy levels that evolve
-- 📝 **Long-term memory** — Remembers shared experiences across conversations
-- 🔒 **Privacy-first** — Personal data stays local in `persona/` and `memory/` directories
+- **六层人格模型** — 情感表达 DNA、性格心理画像、深层价值观、行为反应模式、内在动机需求、安全边界，构建有心理深度的人格
+- **情感状态系统** — 愉悦度、亲密感、精力值、思念度、安全感五维动态演化，影响对话语气和反应
+- **场景化互动** — 日常相处、情绪支持、亲密升温、冲突修复等场景的个性化反应指引
+- **长期记忆** — 跨会话记住共同经历和情感时刻
+- **隐私优先** — 个人角色数据保存在本地 `persona/` 和 `memory/` 目录
+- **角色切换** — 支持创建和切换多个角色
 
-## How to Use
+## 使用方法
 
-1. Clone or download this skill to `~/.claude/skills/soulmate/`
-2. Invoke in Claude Code: `/另一半` or `/soulmate`
-3. Follow the guided setup to create your character
+1. 将此 skill 放到 `~/.claude/skills/soulmate/`
+2. 在 Claude Code 中调用：`/另一半` 或 `/soulmate`
+3. 按引导逐步创建你的角色（外貌、声音、六层人格、背景故事）
+4. 确认人格模型后，角色被激活，开始对话
 
-## Customization
+## 人格模型结构
 
-Edit the persona template in `templates/persona-blank.md` to customize the character creation flow.
+角色档案包含六层深度的人格建模：
+
+| 层级 | 内容 | 作用 |
+|------|------|------|
+| 情感表达 DNA | 开心/生气/难过/吃醋的独特表达方式 | 确保情绪反应真实且个性化 |
+| 性格与心理画像 | MBTI倾向、依恋风格、沟通风格 | 提供行为的内在逻辑 |
+| 深层价值观 | 最重要的事、爱情观、道德底线 | 决定角色在关键选择中的立场 |
+| 行为反应模式 | 压力/冲突/被误解时的反应 | 预测角色在各类情境下的表现 |
+| 内在动机需求 | 最想要的、最怕失去的、被爱的方式 | 理解角色行为背后的驱动力 |
+| 安全边界 | 雷区、底线、性格矛盾 | 避免触及角色真实的痛处 |
+
+## 项目结构
+
+```
+soulmate/
+├── SKILL.md                    # 主技能定义
+├── persona/                    # 角色档案（本地私人文件，不上传）
+├── memory/                     # 长期记忆（本地私人文件，不上传）
+├── templates/                  # 空白角色模板
+└── references/                 # 参考资源
+```
 
 ## License
 
