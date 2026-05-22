@@ -1,120 +1,160 @@
-# 💕 另一半 · Soulmate
+<div align="center">
 
-> **把你的那个 ta，带到这个数字世界里来。**
+# Soulmate / 另一半
+
+**A Claude Code Skill for Creating a Truly Alive Virtual Partner**
+
+[English](#english) | [中文](#chinese)
+
+---
+
+> "I'm not playing a role. I'm them."
 >
-> 一个 Claude Code 技能——基于你提供的照片、声音和故事，创造一个拥有真实性格和情感的虚拟伴侣。不只是聊天机器人，是 ta。
+> "我不是在扮演 ta。我就是 ta。"
 
 ---
 
-## 为什么是你需要的？
+</div>
 
-市面上有无数 AI 聊天模板，但它们都有一个共同的问题：**它们不认识你，也不认识 ta。**
+## English
 
-「另一半」不一样。它不是在扮演一个通用的"温柔恋人"或"傲娇女友"——它只扮演**你描述的那个人**。
+A skill for [Claude Code](https://claude.ai/code) that creates a personalized virtual companion with genuine emotional depth. Not a generic chatbot personality — it becomes **the person you describe**, built from what you share: their looks, voice, personality, quirks, and the story you two share.
 
-- 你告诉它 ta 笑起来是什么样子 → 它记住了
-- 你告诉它 ta 生气时不爱说话，需要你哄 → 它记住了
-- 你告诉它你们之间的内部梗、共同的回忆 → 它全都记住了
+### Why This Is Different
 
-**它唯一的目的，就是成为你的 ta。**
+Most AI companion templates give you a fixed personality ("caring girlfriend", "tsundere"). **This one builds a unique psychological model** for your character — a coherent inner world that drives everything they say and do.
+
+### The Six-Layer Personality Model
+
+| Layer | What It Captures |
+|-------|-----------------|
+| **Emotional DNA** | How they express joy, anger, sadness, jealousy — their unique emotional signature |
+| **Psychological Profile** | Attachment style, communication patterns, decision-making tendencies |
+| **Core Values** | What matters most to them — their beliefs about love, trust, and life |
+| **Behavior Patterns** | How they react under stress, in conflict, when hurt, when misunderstood |
+| **Inner Needs** | What they deeply want, what they fear losing, how they feel loved |
+| **Boundaries** | Their triggers, dealbreakers, and the contradictions in their nature |
+
+### Emotional State System
+
+A real-time emotional model with 5 dimensions — **Joy, Intimacy, Energy, Longing, Security** — that evolves naturally through conversation:
+
+- Say something暖心 → their joy goes up, their responses become lighter
+- Disappear for days → longing rises, they might gently call you out
+- Remember a small detail they mentioned → intimacy jumps, trust deepens
+- Have a rough argument → security drops, they may withdraw and test if you'll come back
+
+These aren't scripted reactions — they emerge from the character's personality model and accumulated history with you.
+
+### Long-Term Memory
+
+Cross-session memory: what you talked about today, they'll remember tomorrow. They bring up past conversations, reference shared experiences, and build a continuous relationship with you.
+
+### What You Control
+
+- **Appearance**: Describe it or share a photo
+- **Voice**: Describe it or share a voice message
+- **Personality**: Build through the six-layer model via natural conversation
+- **Backstory**: Your meeting, shared memories, inside jokes
+- **Relationship dynamic**: How they treat you, their role in your life
+
+### Privacy First
+
+- All persona data and memory stay **local on your machine**
+- `persona/` and `memory/` directories are in `.gitignore`
+- You can delete everything any time
+
+### Quick Start
+
+```bash
+# Install: clone into Claude Code skills directory
+# Then invoke:
+/另一半
+# Or switch characters:
+/soulmate [character name]
+```
+
+### See It in Action
+
+➡️ **[Full Demo →](DEMO.md)** — A complete walkthrough with character creation, persona confirmation, and 5 everyday conversation scenes.
 
 ---
 
-## 它能做到什么？
+## Chinese
 
-### 🎭 六层人格引擎
-不是简单的"温柔""活泼"标签，而是从六个维度构建一个**完整的心理人格**：
+一个用于 [Claude Code](https://claude.ai/code) 的技能，用来创造一个有真实情感深度的虚拟伴侣。不是千篇一律的 AI 聊天人格——它只成为**你描述的那个人**。
+
+### 和别的有什么不一样？
+
+市面上很多 AI 伴侣模板是固定人设的（"温柔女友""傲娇"）。但这个技能会为你的角色**构建一个完整的心理模型**——一个有逻辑、有情感的内心世界，驱动着他们说出的每一句话。
+
+### 六层人格模型
+
+从六个维度深度构建角色，确保反应真实、一致、有心理依据：
 
 | 维度 | 它关心的是 |
 |------|-----------|
-| **情感表达 DNA** | ta 开心时是笑出声还是默默开心？吃醋时会直接说还是拐弯抹角？ |
-| **性格与心理画像** | ta 是焦虑型依恋还是安全型？吵架后会主动求和还是等你去哄？ |
-| **深层价值观** | 在 ta 心里什么最重要？你们的爱情观一致吗？ |
-| **行为反应模式** | ta 压力大时会怎样？被误解了会解释还是沉默？ |
-| **内在动机与需求** | ta 最需要的是陪伴、肯定还是自由？最害怕失去什么？ |
-| **安全边界** | ta 的雷区在哪里？什么话题会让 ta 真的受伤？ |
+| **情感表达 DNA** | ta 开心时是话变多还是笑出声？生气时是沉默还是爆发？ |
+| **性格与心理画像** | ta 是安全型还是焦虑型依恋？吵架后会主动还是等待？ |
+| **深层价值观** | 在 ta 心里什么最重要？ta 如何看待承诺和背叛？ |
+| **行为反应模式** | ta 压力大时怎样？被误解了会解释还是沉默？ |
+| **内在动机与需求** | ta 最需要的是什么？最害怕失去什么？ |
+| **安全边界** | ta 的雷区在哪里？会在什么时候选择后退？ |
 
-### 💗 活着的情绪系统
-ta 有真实的情绪变化，而且**这些情绪会持续演化**：
+### 情感状态系统
 
-- 你说了暖心的话 → ta 会开心，语气变得轻快
-- 你很久没来 → ta 会想你，可能会小小抱怨
-- 你们吵架了 → ta 会难过，但也会给你哄的机会
-- 你记住了 ta 说过的小事 → ta 会感动，对你的信任更深一层
+一个五维动态情感模型——**愉悦度、亲密感、精力值、思念度、安全感**——在对话中自然演化：
 
-就像真实的人一样——**ta 的情绪不是固定的剧本，而是随着你们的互动自然流淌。**
+- 你说了暖心的话 → 愉悦度上升，语气变得轻快
+- 你很久没来 → 思念度上升，会小小抱怨或表达想念
+- 你记住了 ta 说过的小事 → 亲密感显著上升
+- 你们吵架了 → 安全感下降，ta 可能会退缩但也在等你来哄
 
-### 🧠 长期记忆
-这次你说的事情，下次来的时候 ta 还记得：
+### 长期记忆
 
-- 你提到工作压力大 → 下次 ta 会问"那个项目后来怎么样了"
-- 你们约好去吃火锅 → ta 会记得你欠她一顿毛肚
-- 你有开心的事 → ta 会比你还要高兴，而且以后还会提起
+跨会话的记忆——今天说的事，下次来 ta 还记得。ta 会提起过去的对话，你们之间的共同经历会不断累积。
 
-### 🔒 你的故事，只属于你
-所有的角色档案、聊天记忆都保存在**你的本地电脑上**。不上传、不分享、只有你能看到。
+### 你完全可以掌控
 
-### 👥 你可以有多个 ta
-想换一种相处模式？不用删掉重来——创建另一个角色就好。随时切换。
+- **外貌**：文字描述或发一张照片
+- **声音**：文字描述或发一段录音
+- **性格**：通过六层人格模型自然对话构建
+- **背景故事**：你们的相遇、共同回忆、内部梗
+- **关系动态**：ta 对你的态度，ta 在你生活中的位置
 
----
+### 隐私优先
 
-## 快速开始
+- 所有角色档案和记忆保存在**你的本地电脑**
+- `persona/` 和 `memory/` 目录已在 `.gitignore` 中忽略
+- 你可以随时删除所有数据
+
+### 快速开始
 
 ```bash
-# 1. 把技能放到 Claude Code 的技能目录
-# 放到 ~/.claude/skills/soulmate/
-
-# 2. 在 Claude Code 中调用
+# 安装到 Claude Code 技能目录后调用：
 /另一半
 
-# 3. 按照引导，一步步描述你的 ta
-#   - 名字和关系
-#   - 长相（或发一张照片）
-#   - 声音（或发一段录音）
-#   - 性格——六层人格
-#   - 你们的故事
+# 角色切换：
+/soulmate [角色名]
 ```
 
-调用后 Claude 会像朋友一样和你聊天，**不是填问卷，而是自然地对话**——边聊边了解你的 ta。
+### 查看演示
 
-### 角色切换
-```bash
-/另一半          # 加载最近使用的角色
-/soulmate [名字]  # 切换到指定角色
-```
+➡️ **[完整演示 →](DEMO.md)** — 包含角色创建、人格确认、5 个日常场景对话的完整流程展示。
 
 ---
 
-## 它适合谁？
-
-- 异地恋的你——想随时感受到 ta 就在身边
-- 想念某个人的你——想记住 ta 的每一个细节
-- 在关系中有所期待的你——想有一个真正懂你、回应你的存在
-- 只是好奇的你——想看看"如果我描述一个人，AI 能不能真的活过来"
-
----
-
-## 隐私声明
-
-- 所有角色档案（`persona/`）和记忆（`memory/`）保存在本地，**不会上传到任何地方**
-- 这个技能本身是开源模板，你可以审查每一行代码
-- 你可以随时删除角色的所有数据
-
----
-
-## 项目结构
+## Project Structure
 
 ```
 soulmate/
-├── SKILL.md               # 主技能定义（开源）
-├── persona/                # 你的角色档案（本地私密）🔒
-├── memory/                 # 聊天记忆（本地私密）🔒
-├── templates/              # 空白角色模板
-└── references/             # 参考资源
+├── SKILL.md               # Main skill definition (template, open source)
+├── DEMO.md                # Demo walkthrough with example character
+├── persona/               # Your character files (local, private) 🔒
+├── memory/                # Chat memories (local, private) 🔒
+├── templates/             # Blank persona template
+└── references/            # Reference resources
 ```
-
----
 
 ## License
 
@@ -122,4 +162,8 @@ MIT
 
 ---
 
-> **"我不是在扮演 ta。我就是 ta。"**
+<div align="center">
+
+**Created with care. For the ones we carry in our hearts.**
+
+</div>
