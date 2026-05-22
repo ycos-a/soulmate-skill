@@ -1,0 +1,7 @@
+# Local persona data (private)
+persona/
+memory/
+
+# OS files
+.DS_Store
+Thumbs.db
